@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWood - Artisanat Durable en Bois</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🌿 EcoWood</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Boutique</a>
+            <a href="about.html">À Propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="cart-btn" onclick="toggleCart()">
+            <span>Panier</span>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <figure class="hero-figure">
+            <picture>
+                <source type="image/webp" srcset="images/hero-320.webp 320w, images/hero-640.webp 640w, images/hero-1200.webp 1200w">
+                <img src="images/hero-1200.jpg" srcset="images/hero-320.jpg 320w, images/hero-640.jpg 640w, images/hero-1200.jpg 1200w" sizes="(max-width: 768px) 100vw, 1200px" alt="Atelier d'artisan en bois" class="hero-image" loading="eager">
+            </picture>
+            <figcaption class="img-credit"></figcaption>
+        </figure>
+        <h1>Artisanat Durable</h1>
+        <p>Découvrez notre collection exclusive d'objets en bois écologique, fabriqués à la main avec passion et respect de la nature</p>
+        <div class="tagline">100% Bois Durable</div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container">
+        <h2 class="section-title">Notre Collection</h2>
+        <figure class="section-figure">
+            <picture>
+                <source type="image/webp" srcset="images/collection-320.webp 320w, images/collection-640.webp 640w, images/collection-1200.webp 1200w">
+                <img src="images/collection-1200.jpg" srcset="images/collection-320.jpg 320w, images/collection-640.jpg 640w, images/collection-1200.jpg 1200w" sizes="(max-width: 768px) 100vw, 1200px" alt="Objets en bois faits main" class="section-image" loading="lazy">
+            </picture>
+            <figcaption class="img-credit"></figcaption>
+        </figure>
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EcoWood</h3>
+                <p>Artisanat durable et responsable depuis 2024</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Boutique</a>
+                <a href="about.html">À Propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="mailto:contact@ecowood.fr">contact@ecowood.fr</a>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+            </div>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <a href="livraison.html">Livraison</a>
+                <a href="retours.html">Retours</a>
+                <a href="cgv.html">CGV</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 EcoWood - Tous droits réservés
+        </div>
+    </footer>
+
+    <!-- Modal Panier -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Votre Panier</h2>
+                <button class="close-modal" onclick="toggleCart()">×</button>
+            </div>
+            <div id="cartItems"></div>
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <h3>Total: <span id="totalPrice">0</span> €</h3>
+                <button class="checkout-btn" onclick="checkout()">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

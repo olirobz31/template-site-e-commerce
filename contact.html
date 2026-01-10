@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EcoWood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🌿 EcoWood</div>
+        <div class="nav-links">
+            <a href="index.html">Boutique</a>
+            <a href="about.html">À Propos</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero hero-small">
+        <figure class="hero-figure">
+            <picture>
+                <source type="image/webp" srcset="images/contact_hero-320.webp 320w, images/contact_hero-640.webp 640w, images/contact_hero-1200.webp 1200w">
+                <img src="images/contact_hero-1200.jpg" srcset="images/contact_hero-320.jpg 320w, images/contact_hero-640.jpg 640w, images/contact_hero-1200.jpg 1200w" sizes="(max-width: 768px) 100vw, 1200px" alt="Service client" class="hero-image" loading="lazy">
+            </picture>
+            <figcaption class="img-credit"></figcaption>
+        </figure>
+        <h1>Contactez-Nous</h1>
+        <p>Nous sommes à votre écoute</p>
+    </div>
+
+    <!-- Contact Content -->
+    <div class="container">
+        <div class="contact-intro">
+            <h2>Une Question ? Un Projet sur Mesure ?</h2>
+            <p>Notre équipe est là pour vous accompagner dans votre démarche éco-responsable. N'hésitez pas à nous contacter, nous vous répondrons dans les 24 heures.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Formulaire de Contact -->
+            <div class="contact-form-section">
+                <h3>Envoyez-nous un Message</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="jean.dupont@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="info">Demande d'information</option>
+                            <option value="order">Question sur une commande</option>
+                            <option value="custom">Projet sur mesure</option>
+                            <option value="partnership">Partenariat</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">J'accepte de recevoir la newsletter EcoWood</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer le Message</button>
+                </form>
+            </div>
+
+            <!-- Informations de Contact -->
+            <div class="contact-info-section">
+                <figure>
+                    <picture>
+                        <source type="image/webp" srcset="images/contact_team-320.webp 320w, images/contact_team-480.webp 480w, images/contact_team-600.webp 600w">
+                        <img src="images/contact_team-600.jpg" srcset="images/contact_team-320.jpg 320w, images/contact_team-480.jpg 480w, images/contact_team-600.jpg 600w" sizes="(max-width: 768px) 100vw, 600px" alt="Équipe de contact" class="contact-photo" loading="lazy">
+                    </picture>
+                    <figcaption class="img-credit"></figcaption>
+                </figure>
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h4>Adresse</h4>
+                    <p>123 Rue de la Forêt<br>31000 Toulouse, France</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📧</div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:contact@ecowood.fr">contact@ecowood.fr</a></p>
+                    <p><a href="mailto:commercial@ecowood.fr">commercial@ecowood.fr</a></p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <h4>Téléphone</h4>
+                    <p><a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+                    <p class="small-text">Lun - Ven : 9h - 18h</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">⏰</div>
+                    <h4>Horaires</h4>
+                    <p>Lundi - Vendredi : 9h - 18h<br>Samedi : 10h - 17h<br>Dimanche : Fermé</p>
+                </div>
+
+                <div class="social-links">
+                    <h4>Suivez-Nous</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📘 Facebook</a>
+                        <a href="#" class="social-icon">📷 Instagram</a>
+                        <a href="#" class="social-icon">🐦 Twitter</a>
+                        <a href="#" class="social-icon">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Livrez-vous partout en France ?</h4>
+                    <p>Oui, nous livrons dans toute la France métropolitaine. La livraison est gratuite à partir de 75€ d'achat.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Proposez-vous des créations sur mesure ?</h4>
+                    <p>Absolument ! Contactez-nous avec votre projet et nous vous accompagnerons dans la création d'une pièce unique.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Quel est le délai de livraison ?</h4>
+                    <p>Pour les produits en stock : 3-5 jours ouvrés. Pour les créations sur mesure : 2-4 semaines selon la complexité.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Comment entretenir mes produits en bois ?</h4>
+                    <p>Nettoyez avec un chiffon humide et appliquez de l'huile végétale tous les 3-6 mois pour préserver l'éclat naturel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EcoWood</h3>
+                <p>Artisanat durable et responsable depuis 2024</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Boutique</a>
+                <a href="about.html">À Propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="mailto:contact@ecowood.fr">contact@ecowood.fr</a>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+            </div>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <a href="livraison.html">Livraison</a>
+                <a href="retours.html">Retours</a>
+                <a href="cgv.html">CGV</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 EcoWood - Tous droits réservés
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
