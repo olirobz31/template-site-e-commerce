@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWood Template - Documentation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f9f9f9;
+        }
+        h1 {
+            color: #2C1810;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #8B9A7E;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #5D4037;
+            font-size: 1.6rem;
+            margin: 40px 0 20px;
+            padding-left: 15px;
+            border-left: 4px solid #8B9A7E;
+        }
+        h3 {
+            color: #5D4037;
+            font-size: 1.2rem;
+            margin: 25px 0 15px;
+        }
+        p { margin-bottom: 15px; }
+        .intro {
+            background: linear-gradient(135deg, #8B9A7E 0%, #5D4037 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        .intro h2 { color: white; border: none; margin: 0 0 15px; padding: 0; }
+        code {
+            background: #e8e4e0;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        pre {
+            background: #2C1810;
+            color: #F5F1E8;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        pre code { background: none; color: inherit; }
+        .file-list {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .file-list ul { list-style: none; }
+        .file-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .file-list li:last-child { border: none; }
+        .file-list .folder { color: #8B9A7E; font-weight: bold; }
+        .file-list .file { color: #5D4037; margin-left: 20px; }
+        .tip {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th { background: #5D4037; color: white; }
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>EcoWood Template</h1>
+    <p><strong>Version 1.0</strong> | Template HTML/CSS E-commerce pour Artisans</p>
+
+    <div class="intro">
+        <h2>Merci pour votre achat !</h2>
+        <p>Cette documentation vous aidera a personnaliser et configurer votre nouveau template. Si vous avez des questions, n'hesitez pas a nous contacter.</p>
+    </div>
+
+    <h2>1. Pour Commencer</h2>
+
+    <h3>Contenu du Pack</h3>
+    <div class="file-list">
+        <ul>
+            <li class="folder">/ (Dossier racine)</li>
+            <li class="file">index.html - Page d'accueil & Boutique</li>
+            <li class="file">about.html - Page A Propos</li>
+            <li class="file">contact.html - Page Contact avec formulaire</li>
+            <li class="file">checkout.html - Page de paiement</li>
+            <li class="file">livraison.html - Infos livraison</li>
+            <li class="file">retours.html - Politique de retours</li>
+            <li class="file">cgv.html - Conditions generales</li>
+            <li class="file">style.css - Tous les styles</li>
+            <li class="file">script.js - Panier & produits</li>
+            <li class="file">contact.js - Gestion du formulaire</li>
+            <li class="file">customize.css - Personnalisation des couleurs</li>
+            <li class="folder">/images - Toutes les images (WebP + JPG)</li>
+        </ul>
+    </div>
+
+    <h3>Demarrage Rapide</h3>
+    <ol>
+        <li>Dezippez le fichier telecharge</li>
+        <li>Ouvrez <code>index.html</code> dans votre navigateur pour visualiser</li>
+        <li>Modifiez les fichiers HTML avec votre contenu</li>
+        <li>Remplacez les images dans le dossier <code>/images</code></li>
+        <li>Uploadez sur votre hebergement</li>
+    </ol>
+
+    <h2>2. Personnalisation</h2>
+
+    <h3>Changer les Couleurs</h3>
+    <p>Toutes les couleurs sont definies comme variables CSS dans <code>style.css</code>. Modifiez ces valeurs en haut du fichier :</p>
+
+    <pre><code>:root {
+    --wood-dark: #2C1810;    /* Marron fonce - titres, texte */
+    --wood-medium: #5D4037;  /* Marron moyen - boutons */
+    --wood-light: #8D6E63;   /* Marron clair - texte secondaire */
+    --cream: #F5F1E8;        /* Couleur de fond */
+    --sage: #8B9A7E;         /* Accent vert */
+    --terracotta: #C97E5D;   /* Accent orange */
+    --sand: #E8DCC4;         /* Fond clair */
+}</code></pre>
+
+    <table>
+        <tr>
+            <th>Variable</th>
+            <th>Valeur</th>
+            <th>Utilisation</th>
+        </tr>
+        <tr>
+            <td><span class="color-box" style="background:#2C1810"></span>--wood-dark</td>
+            <td>#2C1810</td>
+            <td>Titres, texte principal, footer</td>
+        </tr>
+        <tr>
+            <td><span class="color-box" style="background:#5D4037"></span>--wood-medium</td>
+            <td>#5D4037</td>
+            <td>Boutons, liens, accents</td>
+        </tr>
+        <tr>
+            <td><span class="color-box" style="background:#8B9A7E"></span>--sage</td>
+            <td>#8B9A7E</td>
+            <td>Boutons d'action, highlights</td>
+        </tr>
+        <tr>
+            <td><span class="color-box" style="background:#C97E5D"></span>--terracotta</td>
+            <td>#C97E5D</td>
+            <td>Badge panier, effets hover</td>
+        </tr>
+        <tr>
+            <td><span class="color-box" style="background:#F5F1E8"></span>--cream</td>
+            <td>#F5F1E8</td>
+            <td>Fond principal</td>
+        </tr>
+    </table>
+
+    <h3>Changer les Produits</h3>
+    <p>Les produits sont definis dans <code>script.js</code>. Modifiez le tableau <code>products</code> :</p>
+
+    <pre><code>const products = [
+    {
+        id: 1,
+        name: "Nom de votre produit",
+        description: "Description du produit ici",
+        price: 29.90,
+        image: "product-1"  // correspond a images/product-1-XXX.jpg
+    },
+    // Ajoutez d'autres produits...
+];</code></pre>
+
+    <div class="tip">
+        <strong>Astuce :</strong> Pour chaque produit, creez des images en 3 tailles : 320px, 640px et 1200px de largeur. Nommez-les ainsi : <code>product-1-320.jpg</code>, <code>product-1-640.jpg</code>, <code>product-1-1200.jpg</code>
+    </div>
+
+    <h3>Changer les Infos de l'Entreprise</h3>
+    <p>Recherchez et remplacez ces valeurs dans tous les fichiers HTML :</p>
+    <ul>
+        <li><code>EcoWood</code> - Nom de votre entreprise</li>
+        <li><code>contact@ecowood.fr</code> - Votre email</li>
+        <li><code>+33 1 23 45 67 89</code> - Votre telephone</li>
+        <li><code>123 Rue de la Foret, 31000 Toulouse</code> - Votre adresse</li>
+    </ul>
+
+    <h2>3. Images</h2>
+
+    <h3>Optimisation des Images</h3>
+    <p>Le template utilise des images responsives au format WebP pour de meilleures performances. Chaque image a plusieurs tailles :</p>
+
+    <table>
+        <tr>
+            <th>Taille</th>
+            <th>Utilisation</th>
+        </tr>
+        <tr>
+            <td>320px</td>
+            <td>Telephones mobiles</td>
+        </tr>
+        <tr>
+            <td>640px</td>
+            <td>Tablettes, petits ecrans</td>
+        </tr>
+        <tr>
+            <td>1200px</td>
+            <td>Ordinateurs, grands ecrans</td>
+        </tr>
+    </table>
+
+    <div class="tip">
+        <strong>Astuce :</strong> Utilisez <a href="https://squoosh.app" target="_blank">Squoosh.app</a> (gratuit) pour convertir et redimensionner vos images au format WebP.
+    </div>
+
+    <h2>4. Hebergement</h2>
+
+    <h3>Options Gratuites</h3>
+    <ul>
+        <li><strong>Netlify</strong> - Glissez-deposez votre dossier sur netlify.com</li>
+        <li><strong>Vercel</strong> - Connectez votre repo GitHub</li>
+        <li><strong>GitHub Pages</strong> - Hebergement gratuit depuis votre repo</li>
+    </ul>
+
+    <h3>Options Payantes</h3>
+    <ul>
+        <li><strong>OVH</strong> - A partir de 2.99eur/mois</li>
+        <li><strong>Hostinger</strong> - A partir de 1.99eur/mois</li>
+        <li><strong>o2switch</strong> - 7eur/mois (illimite)</li>
+    </ul>
+
+    <h2>5. Rendre le Formulaire Fonctionnel</h2>
+
+    <p>Le formulaire de contact est actuellement une demo. Pour le rendre fonctionnel, plusieurs options :</p>
+
+    <h3>Option 1 : Formspree (Le plus simple)</h3>
+    <ol>
+        <li>Allez sur <a href="https://formspree.io" target="_blank">formspree.io</a> et creez un compte gratuit</li>
+        <li>Creez un nouveau formulaire et copiez votre ID</li>
+        <li>Dans <code>contact.html</code>, modifiez la balise form :</li>
+    </ol>
+    <pre><code>&lt;form action="https://formspree.io/f/VOTRE_ID" method="POST"&gt;</code></pre>
+
+    <h3>Option 2 : Netlify Forms</h3>
+    <p>Si vous hebergez sur Netlify, ajoutez simplement l'attribut <code>netlify</code> a votre formulaire :</p>
+    <pre><code>&lt;form name="contact" netlify&gt;</code></pre>
+
+    <h2>6. Ajouter de Vrais Paiements</h2>
+
+    <div class="warning">
+        <strong>Note :</strong> Le checkout actuel est une demo. Pour de vrais paiements, vous devez integrer un processeur de paiement.
+    </div>
+
+    <h3>Recommande : Stripe</h3>
+    <p>Stripe est facile a integrer et supporte les cartes, Apple Pay, Google Pay. Visitez <a href="https://stripe.com" target="_blank">stripe.com</a> pour commencer.</p>
+
+    <h3>Alternative : PayPal</h3>
+    <p>Les boutons PayPal sont faciles a ajouter. Visitez <a href="https://www.paypal.com/buttons" target="_blank">paypal.com/buttons</a></p>
+
+    <h2>7. Conseils SEO</h2>
+
+    <ul>
+        <li>Changez la balise <code>&lt;title&gt;</code> sur chaque page</li>
+        <li>Ajoutez des meta descriptions dans le <code>&lt;head&gt;</code></li>
+        <li>Utilisez des textes alt descriptifs pour les images</li>
+        <li>Creez un fichier sitemap.xml</li>
+        <li>Inscrivez-vous sur Google Search Console</li>
+    </ul>
+
+    <h2>8. Compatibilite Navigateurs</h2>
+
+    <p>Ce template fonctionne sur :</p>
+    <ul>
+        <li>Chrome (derniere version)</li>
+        <li>Firefox (derniere version)</li>
+        <li>Safari (derniere version)</li>
+        <li>Edge (derniere version)</li>
+        <li>Navigateurs mobiles (iOS Safari, Chrome Android)</li>
+    </ul>
+
+    <h2>9. Credits</h2>
+
+    <ul>
+        <li>Polices : Google Fonts (Cormorant Garamond, Work Sans)</li>
+        <li>Icones : Emoji (aucune dependance externe)</li>
+    </ul>
+
+    <h2>10. Support</h2>
+
+    <p>Si vous avez besoin d'aide pour la personnalisation ou avez des questions, contactez-nous via les messages Etsy. Nous repondons generalement sous 24 heures.</p>
+
+    <footer>
+        <p>EcoWood Template v1.0<br>
+        Merci pour votre achat !</p>
+    </footer>
+</body>
+</html>

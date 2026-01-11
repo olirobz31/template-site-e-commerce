@@ -1,51 +1,75 @@
-# EcoWood - Boutique d'Artisanat en Bois
+# EcoWood - Template Site E-commerce
 
-Site e-commerce pour une boutique d'artisanat durable spécialisée dans les objets en bois écologique.
+Un template HTML/CSS elegant et responsive, parfait pour les artisans, createurs et petites boutiques en ligne.
 
-## Apercu
+## Caracteristiques
 
-EcoWood propose une collection d'objets en bois fabriqués à la main : planches à découper, supports, bols, ustensiles et accessoires de décoration.
+- 10 pages completes (Boutique, A Propos, Contact, Paiement, etc.)
+- Design responsive (mobile, tablette, ordinateur)
+- Panier fonctionnel avec localStorage
+- Images optimisees (WebP + JPG)
+- Personnalisation facile des couleurs (7 themes inclus)
+- Code propre et commente
+- Aucun framework requis
+- Structure optimisee SEO
 
-## Fonctionnalités
+## Pages Incluses
 
-- Catalogue de produits avec images responsive (WebP + JPG)
-- Panier d'achat avec persistance localStorage
-- Processus de commande complet
-- Pages informatives (Livraison, Retours, CGV)
-- Formulaire de contact
-- Design responsive mobile-first
+| Page | Description |
+|------|-------------|
+| index.html | Page d'accueil avec grille produits |
+| about.html | Histoire et valeurs |
+| contact.html | Formulaire de contact |
+| checkout.html | Page de paiement |
+| livraison.html | Informations livraison |
+| retours.html | Politique de retours |
+| cgv.html | Conditions generales |
 
-## Structure du projet
+## Demarrage Rapide
 
-```
-site-e-commerce/
-├── index.html          # Page d'accueil / Boutique
-├── about.html          # Page À Propos
-├── contact.html        # Page Contact
-├── checkout.html       # Page de paiement
-├── livraison.html      # Informations livraison
-├── retours.html        # Politique de retours
-├── cgv.html            # Conditions générales de vente
-├── style.css           # Styles CSS
-├── script.js           # JavaScript principal (panier, produits)
-├── contact.js          # JavaScript formulaire contact
-└── images/             # Images produits et illustrations
-```
+1. Dezippez les fichiers
+2. Ouvrez `index.html` dans votre navigateur
+3. Modifiez le HTML avec votre contenu
+4. Remplacez les images dans `/images`
+5. Uploadez sur votre hebergement
 
-## Technologies
+## Personnalisation
 
-- HTML5
-- CSS3 (variables CSS, Flexbox, Grid)
-- JavaScript vanilla (ES6+)
-- Fonts Google (Cormorant Garamond, Work Sans)
+### Couleurs
+Modifiez les variables CSS dans `style.css` ou utilisez `customize.css` avec les themes pre-faits :
+- Bois & Sauge (defaut)
+- Bleu Ocean
+- Vert Foret
+- Terracotta Chaud
+- Gris Moderne
+- Violet Elegant
+- Orange Rustique
 
-## Installation
+### Produits
+Modifiez le tableau `products` dans `script.js` pour ajouter vos propres produits.
 
-1. Cloner le repository
-2. Ouvrir `index.html` dans un navigateur
+## Documentation
 
-Aucune dépendance ni build nécessaire.
+Consultez `DOCUMENTATION.html` pour le guide complet :
+- Instructions de personnalisation detaillees
+- Astuces optimisation images
+- Recommandations hebergement
+- Configuration formulaire contact
+- Guide integration paiements
+
+## Compatibilite
+
+- Chrome, Firefox, Safari, Edge (dernieres versions)
+- iOS Safari, Chrome Android
 
 ## Licence
 
-Tous droits réservés - EcoWood 2024
+Ce template est pour usage personnel et commercial. Vous pouvez l'utiliser pour vous-meme ou vos clients. La redistribution ou revente n'est pas autorisee.
+
+## Support
+
+Des questions ? Contactez-nous via les messages Etsy.
+
+---
+
+Merci pour votre achat !

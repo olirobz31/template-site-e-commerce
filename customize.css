@@ -1,0 +1,129 @@
+/*
+ * EcoWood Template - Personnalisation des Couleurs
+ *
+ * COMMENT UTILISER :
+ * 1. Decommentez un des themes ci-dessous
+ * 2. Ou creez le votre en changeant les valeurs
+ * 3. Liez ce fichier APRES style.css dans votre HTML :
+ *    <link rel="stylesheet" href="customize.css">
+ */
+
+/* ============================================
+   THEME PAR DEFAUT - Bois & Sauge (Deja actif dans style.css)
+   ============================================ */
+/*
+:root {
+    --wood-dark: #2C1810;
+    --wood-medium: #5D4037;
+    --wood-light: #8D6E63;
+    --cream: #F5F1E8;
+    --sage: #8B9A7E;
+    --terracotta: #C97E5D;
+    --sand: #E8DCC4;
+}
+*/
+
+/* ============================================
+   THEME 2 - Bleu Ocean
+   ============================================ */
+/*
+:root {
+    --wood-dark: #1a365d;
+    --wood-medium: #2c5282;
+    --wood-light: #4a7c9b;
+    --cream: #f0f5f9;
+    --sage: #38a169;
+    --terracotta: #e07c4e;
+    --sand: #e2e8f0;
+}
+*/
+
+/* ============================================
+   THEME 3 - Vert Foret
+   ============================================ */
+/*
+:root {
+    --wood-dark: #1a3a2f;
+    --wood-medium: #2d5a47;
+    --wood-light: #4a7c68;
+    --cream: #f0f7f4;
+    --sage: #68a67d;
+    --terracotta: #c9785d;
+    --sand: #dce8e3;
+}
+*/
+
+/* ============================================
+   THEME 4 - Terracotta Chaud
+   ============================================ */
+/*
+:root {
+    --wood-dark: #3d2314;
+    --wood-medium: #8b4513;
+    --wood-light: #a0522d;
+    --cream: #faf5f0;
+    --sage: #bc8f6f;
+    --terracotta: #cd5c5c;
+    --sand: #f0e6d8;
+}
+*/
+
+/* ============================================
+   THEME 5 - Gris Moderne
+   ============================================ */
+/*
+:root {
+    --wood-dark: #1f2937;
+    --wood-medium: #374151;
+    --wood-light: #6b7280;
+    --cream: #f9fafb;
+    --sage: #10b981;
+    --terracotta: #f59e0b;
+    --sand: #e5e7eb;
+}
+*/
+
+/* ============================================
+   THEME 6 - Violet Elegant
+   ============================================ */
+/*
+:root {
+    --wood-dark: #2d1b4e;
+    --wood-medium: #4c3a6e;
+    --wood-light: #7c6a9e;
+    --cream: #f8f5fc;
+    --sage: #9f7aea;
+    --terracotta: #e07c8f;
+    --sand: #e9e2f4;
+}
+*/
+
+/* ============================================
+   THEME 7 - Orange Rustique
+   ============================================ */
+/*
+:root {
+    --wood-dark: #3d2817;
+    --wood-medium: #7c4a1e;
+    --wood-light: #a06830;
+    --cream: #fdf8f3;
+    --sage: #d97706;
+    --terracotta: #dc2626;
+    --sand: #fde8d0;
+}
+*/
+
+/* ============================================
+   THEME PERSONNALISE - Creez le votre !
+   ============================================ */
+/*
+:root {
+    --wood-dark: #VOTRE_COULEUR;
+    --wood-medium: #VOTRE_COULEUR;
+    --wood-light: #VOTRE_COULEUR;
+    --cream: #VOTRE_COULEUR;
+    --sage: #VOTRE_COULEUR;
+    --terracotta: #VOTRE_COULEUR;
+    --sand: #VOTRE_COULEUR;
+}
+*/
