@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.ecowood.fr/</loc>
+        <loc>https://olirobz31.github.io/template-site-e-commerce/</loc>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://www.ecowood.fr/about.html</loc>
+        <loc>https://olirobz31.github.io/template-site-e-commerce/about.html</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.ecowood.fr/contact.html</loc>
+        <loc>https://olirobz31.github.io/template-site-e-commerce/contact.html</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.ecowood.fr/livraison.html</loc>
+        <loc>https://olirobz31.github.io/template-site-e-commerce/livraison.html</loc>
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.ecowood.fr/retours.html</loc>
+        <loc>https://olirobz31.github.io/template-site-e-commerce/retours.html</loc>
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
